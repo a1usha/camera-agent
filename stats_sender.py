@@ -2,9 +2,9 @@ from stats import get_current_date, get_coords, get_image
 import requests
 import time
 
-SLEEP_INTERVAL = 5 
-URL = ''
-IMAGE_DIR = ''
+SLEEP_INTERVAL = 5  # Refresh rate in seconds
+URL = ''            # URL to post data
+IMAGE_DIR = ''      # Directory with images
 
 def create_post_dict() -> dict:
     x, y = get_coords()
